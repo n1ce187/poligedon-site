@@ -1,0 +1,124 @@
+.gallery-carousel {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.gallery-carousel h2 {
+  font-size: 32px;
+  color: #800020;
+  margin-bottom: 24px;
+}
+
+.main-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.main-image img {
+  max-width: 100%;
+  max-height: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.main-image img.zoomed {
+  transform: scale(1.2);
+  cursor: zoom-out;
+}
+
+.thumbnails {
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
+  gap: 32px;
+  padding: 16px 0;
+  scrollbar-width: thin;
+}
+
+.thumbnails::-webkit-scrollbar {
+  height: 8px;
+}
+.thumbnails::-webkit-scrollbar-thumb {
+  background: #800020;
+  border-radius: 4px;
+}
+
+.thumbnails img {
+  height: 100px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: transform 0.2s ease, outline 0.2s, opacity 0.2s;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.thumbnails img.active {
+  transform: scale(1.2);
+  outline: 3px solid #800020;
+  opacity: 1;
+}
+footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 32px 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  color: #ffbf00;
+  margin: 0 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0.85);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+  filter: brightness(1);
+}
+.main-image img.zoomed {
+  transform: scale(1.2);
+  cursor: zoom-out;
+}
